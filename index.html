@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/acf65a5a2b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/logo.png" class="logo" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Trainee Full Stack Developer</p>
+          <h1>
+            Hi, I'm <span>Deshika</span> Theekshani<br />
+            From Sri Lanka.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!------------------about----------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi! I'm Deshika Theekshani, a passionate and aspiring Full-Stack
+              Developer with a keen interest in crafting dynamic and
+              user-friendly web applications. Currently, I'm honing my skills in
+              technologies like Java, HTML, CSS, and JavaScript, and diving
+              deeper into the exciting world of full-stack development.
+              <br />
+              <br />
+              I love solving problems through clean and efficient code, bringing
+              creative ideas to life on the web. My journey in development has
+              taught me the importance of continuous learning, collaboration,
+              and attention to detail, and I'm eager to tackle new challenges
+              and expand my expertise.
+              <br />
+              <br />
+              When I'm not coding, I enjoy exploring the latest trends in tech,
+              experimenting with new frameworks, or engaging in personal
+              projects to sharpen my skills. My goal is to contribute to
+              impactful projects that make a difference and grow as a developer
+              every step of the way.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Skills:</span><br />HTML5 & CSS3 & JavaScript
+                </li>
+                <li>
+                  <span>Backend Skills:</span><br />Java <br />Databases:SQL &
+                  MySQl
+                </li>
+                <li>
+                  <span>Other Tools:</span><br />Version Control: Git and GitHub
+                  <br />Development Tools: IDEs like Visual Studio Code.
+                  <br />APIs: Consuming and building RESTful APIs
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024-Current</span><br />
+                  Trainee Full Stack Developer at<br />
+                  Institute of Computer Engineering Technology (iCET)
+                  <br /><br />
+                  Developing projects to understand the full-stack development
+                  lifecycle.
+                </li>
+                <li>
+                  <br />
+                  <span>Personal Projects</span>
+                  <br />
+                  Creating small web applications like to-do lists or simple
+                  calculators to practice coding.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024-2025</span><br />
+                  Trainee Full Stack Developing Student at<br />
+                  Institute of Computer Engineering Technology (iCET)
+                </li>
+                <li>
+                  <br />
+                  <span>Self-Taught Web Development Enthusiast</span><br />
+                  Actively participating in coding challenges and practice
+                  sessions to improve problem-solving skills.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------services------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-desktop"></i>
+            <h2>Web Development</h2>
+            <p>
+              Creating responsive and visually appealing websites using HTML,
+              CSS, and JavaScript. <br />
+              Designing user-friendly interfaces with attention to detail and
+              accessibility.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-palette"></i>
+            <h2>Frontend Development</h2>
+            <p>
+              Building dynamic and interactive user experiences using JavaScript
+              and modern design principles. <br />
+              Implementing clean, maintainable code for scalable web projects.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-gear"></i>
+            <h2>Backend Development</h2>
+            <p>
+              Developing basic server-side logic using Java and frameworks.
+              <br />
+              Connecting and managing databases to support web applications.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-rocket"></i>
+            <h2>Full-Stack Development</h2>
+            <p>
+              Combining frontend and backend technologies to create complete web
+              solutions. <br />
+              Integrating APIs for enhanced application functionality.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------portfolio----------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Fashion Shop Management System</h3>
+              <p>
+                A desktop application built using Java Swing to manage a T-shirt
+                store, featuring CRUD (Create, Read, Update, Delete) operations
+                for efficient inventory management. The application allows users
+                to add new T-shirt products, update existing inventory details,
+                delete items, and view a list of all available products.
+                Designed with a user-friendly interface, the system streamlines
+                store operations and simplifies product management.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>To-Do List Web Application</h3>
+              <p>
+                A simple and interactive web application built using HTML, CSS,
+                and JavaScript to help users manage their daily tasks
+                efficiently. The application allows users to add, mark as
+                complete, and delete tasks in a user-friendly interface.
+                Designed with responsive styling and dynamic functionality, it
+                demonstrates effective use of DOM manipulation and JavaScript
+                logic.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Find Country Details</h3>
+              <p>
+                A web application that allows users to search for and view
+                details about countries around the world. Built with HTML, CSS,
+                and JavaScript, the app uses an API to retrieve country data
+                such as population, capital, and region. It features a clean and
+                responsive design, with dynamic content loading and a
+                user-friendly search function.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-4.png" alt="" />
+            <div class="layer">
+              <h3>Number Guessing Game</h3>
+              <p>
+                A fun and interactive web-based game built using HTML, CSS, and
+                JavaScript. In this game, users try to guess a randomly
+                generated number within a given range. The application provides
+                real-time feedback, indicating whether the guess is too high,
+                too low, or correct. This project showcases basic JavaScript
+                logic, event handling, and user interaction.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-----------------contact------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >deshikathikshani456@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>075-5263929</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/deshika-theekshani-234b54336/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/DESHIKATHEEKSHANI"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://web.facebook.com/?_rdc=1&_rdr"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; 2024 Deshika Thikshani.
+          <i class="fas fa-heart"></i> All rights reserved
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwCV4boWV1pkHg34bP3q4jb80BQkkKPA5xQn5vrhGjOnTodtUPbJ0zSB0-vnRFrlzR3/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
