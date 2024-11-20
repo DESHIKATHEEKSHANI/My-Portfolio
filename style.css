@@ -375,6 +375,9 @@ nav .fas{
     .copyright{
         font-size: 14px;
     }
+    .layer{
+        font-size: 12px;
+    }
 }
 #msg{
     color: #61b752;
